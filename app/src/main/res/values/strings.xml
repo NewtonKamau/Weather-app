@@ -189,6 +189,6 @@
     <string name="action_graphs">Graphs</string>
     <string name="widget_label_extensive">Weather Extensive</string>
     <string name="widget_label_time">Weather Time</string>
-    <string name="widget_label_simple">Weather Simple</string>
-    <string name="widget_label_classic">Weather Classic</string>
+    <string name="widget_label_simple">Weather Simple App</string>
+    <string name="widget_label_classic">Weather Classic App</string>
 </resources>
