@@ -2,7 +2,7 @@ package com.example.weather.utils;
 
 import android.content.Context;
 
-import com.example.forecastie.R;
+import com.example.weather.R;
 
 public class Formatting {
 

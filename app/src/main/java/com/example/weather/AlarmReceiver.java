@@ -17,8 +17,8 @@ import android.os.SystemClock;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-import com.example.forecastie.widgets.AbstractWidgetProvider;
-import com.example.forecastie.widgets.DashClockWeatherExtension;
+import com.example.weather.widgets.AbstractWidgetProvider;
+import com.example.weather.widgets.DashClockWeatherExtension;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -157,7 +157,7 @@ public class AlarmReceiver extends BroadcastReceiver {
                 SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
                 String language = getLanguage();
                 String apiKey = sp.getString("apiKey", context.getResources().getString(R.string.apiKey));
-                URL url = new URL("https://api.openweathermap.org/data/2.5/forecast?id=" + URLEncoder.encode(sp.getString("cityId", Constants.DEFAULT_CITY_ID), "UTF-8") + "&lang="+ language +"&mode=json&appid=" + apiKey);
+                URL url = new URL("http://api.openweathermap.org/data/2.5/weather?lat=0&lon=0&appid=c6e381d8c7ff98f0fee43775817cf6ad&units=metric" + URLEncoder.encode(sp.getString("cityId", Constants.DEFAULT_CITY_ID), "UTF-8") + "&lang="+ language +"&mode=json&appid=" + apiKey);
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 BufferedReader connectionBufferedReader = null;
                 try {

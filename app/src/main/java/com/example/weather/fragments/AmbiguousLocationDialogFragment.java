@@ -7,23 +7,25 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.Toolbar;
 
-import com.example.forecastie.R;
-import com.example.forecastie.activities.MainActivity;
-import com.example.forecastie.adapters.LocationsRecyclerAdapter;
-import com.example.forecastie.models.Weather;
-import com.example.forecastie.utils.Formatting;
-import com.example.forecastie.utils.UnitConvertor;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.weather.R;
+import com.example.weather.MainActivity;
+import com.example.weather.adapters.LocationsRecyclerAdapter;
+import com.example.weather.Weather;
+import com.example.weather.utils.Formatting;
+import com.example.weather.utils.UnitConvertor;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -33,7 +35,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import static com.example.forecastie.utils.TimeUtils.isDayTime;
+import static com.example.weather.utils.TimeUtils.isDayTime;
 
 public class AmbiguousLocationDialogFragment extends DialogFragment implements LocationsRecyclerAdapter.ItemClickListener {
 

@@ -1,6 +1,6 @@
 package com.example.weather.utils;
 
-import com.example.forecastie.models.Weather;
+import com.example.weather.Weather;
 
 import java.util.Calendar;
 import java.util.Date;

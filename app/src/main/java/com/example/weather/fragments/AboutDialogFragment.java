@@ -1,15 +1,17 @@
 package com.example.weather.fragments;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.app.AlertDialog;
+
 import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
-import com.example.forecastie.R;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.DialogFragment;
+
+import com.example.weather.R;
 
 public class AboutDialogFragment extends DialogFragment {
 
